@@ -1,0 +1,16 @@
+{
+  "name": "mood-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service-worker.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Muskan Upadhyay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-http-to-https": "^1.1.4",
+    "node-fetch": "^2.5.0"
+  }
+}
