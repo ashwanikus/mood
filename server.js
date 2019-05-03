@@ -3,6 +3,8 @@ const express = require('express');
 const fetch = require('node-fetch');
 const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
 
+const port = process.env.port || 8000;
+
 
 function startServer() {
     const app = express();
@@ -24,9 +26,9 @@ function startServer() {
     app.use(express.static('public'));
     // Start the server
 
-    return app.listen('8000', () => {
+    return app.listen(port, () => {
         // eslint-disable-next-line no-console
-        console.log('Local DevServer Started on port 8000...');
+        console.log(`Local DevServer Started on port ${port}...`);
     });
 
 }
